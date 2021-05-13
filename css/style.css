@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Ropa Sans', sans-serif;
     padding: 0;
     margin: 0;
@@ -15,68 +16,65 @@ body{
     margin: 0 auto;
 }
 
-header{
-    background: #FFFFFF;
+header {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-    /*Fixar header na tela*/
+    /* fixar header na tela */
     position: fixed;
     width: 100%;
     background-color: #fff;
-    /*projeta o elemento a frente dos outros*/
+    /* projeta o elemento a frente dos outros */
     z-index: 3;
-    /* posicionamento*/
+    /* posicionamento */
     top: 0;
     left: 0;
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
-    /* alinhamento horizontal*/
+    /* alinhamento horizontal */
     align-items: center;
-     /* alinhamento vertical*/
+    /* alinhamento vertical */
 }
 
-header .logo h1{
+header .logo h1 {
     display: inline-block;
     color: #777;
     font-size: 40px;
 }
 
-header .logo h2{
+header .logo h2 {
     display: inline-block;
     color: #777;
     font-size: 16px;
     font-weight: 200;
 }
 
-main section.banner .slide img{
+main section.banner .slide img {
     width: 100%;
-
 }
 
-main section.banner .container{
+main section.banner .container {
     position: relative;
 }
 
-main section.banner .container .setas{
+main section.banner .container .setas {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
-    /*alinhamento na horizontal*/    
+    /* alinhamento horizontal */
     justify-content: space-between;
-    /*alinhamento na vertical*/
+    /* alainhamento vertical */
     align-items: center;
 }
 
 main section.banner .container .setas a {
-    
-    width: 50px;/*Tamanho do circulo*/
+    width: 50px;
     height: 50px;
-    border-radius: 50px;/* Deixar arredondado*/
+    border-radius: 50px;
     background-color: rgba(128, 128, 128, 0.8);
     display: flex;
     justify-content: center;
@@ -88,13 +86,13 @@ main section.banner {
     padding: 50px 0;
 }
 
-main section.projects .container{
+main section.projects .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main section.projects .container article{
+main section.projects .container article {
     width: 450px;
     max-width: 100%;
     background-color: #EEEEEE;
@@ -108,21 +106,21 @@ main section.projects .container article .thumb {
     background-size: cover;
 }
 
-main section.projects .container article .info{
+main section.projects .container article .info {
     padding: 20px;
 }
 
-main section.projects .container article .info .price-tag{
+main section.projects .container article .info .price-tag {
     display: flex;
     justify-content: space-between;
 }
 
-main section.projects .container article .info .price{
+main section.projects .container article .info .price {
     font-size: 30px;
     margin: 0;
 }
 
-main section.projects .container article .info .tag{
+main section.projects .container article .info .tag {
     padding: 5px 10px;
     background-color: gray;
     color: #fff;
@@ -131,56 +129,83 @@ main section.projects .container article .info .tag{
     font-size: 25px;
 }
 
-main section.projects .container article .info .tag-new{
+main section.projects .container article .info .tag-new {
     background-color: #51D275;
 }
 
-main section.projects .container article .info .tag-sale{
+main section.projects .container article .info .tag-sale {
     background-color: #DC9730;
 }
-main section.styles .container{
-    padding-bottom: 20px;
-    
-}
-main section.styles .container article .subtitle h2{
-    
-    width: 100%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size:50px;
-    color: #888888;
-    
-}
 
-main section.styles .container article .thumb{
-   
-   
+main section.styles article {
     width: 100%;
-    height: 200px;
-    background-repeat: no-repeat;
+    height: 150px;
     background-size: cover;
-    padding-bottom: 20px;
-    border-radius: 20px;
+    background-position: center;
+    position: relative;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
-
-main section.styles .container article .thumb .title  {
-    
+main section.styles article h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 200px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 50px;
-    color: #FFFFFF;
-         
-
+    margin: 0;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 400;
 }
 
-footer{
+section.contato h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+form {
+    width: 500px;
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+form input:not([type='radio']):not([type='checkbox']),
+form textarea,
+form select {
+    width: 100%;
+    padding: 5px;
+    resize: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form fieldset {
+    margin: 10px 0;
+}
+
+form button {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #DC9730;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    font-family: 'Ropa Sans', sans-serif;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #51D275;
+}
+
+footer {
     background-color: #333333;
     color: #ffffff;
     padding: 50px;
@@ -188,59 +213,37 @@ footer{
     justify-content: space-around;
 }
 
-footer a:any-link{
-    color: #FFFFFF;
+footer a:any-link {
+    color: #ffffff;
 }
 
-footer iframe{
+footer iframe {
     width: 400px;
     height: 350px;
     max-width: 100%;
 }
 
-section.contato h2{
+.main-form {
+    padding: 100px 0;
     text-align: center;
-    font-size: 40px;
 }
 
-section.contato form{
-    width: 500px;
-    max-width: 100%;
-    margin: 40px auto;
-
-}
-
-section.contato form input,
-section.contato form textarea{
-    width: 100%;
-    padding: 5px;
-    resize: none;
-    margin-bottom: 15px;
-}
-
-section.contato form button{
-    width: 100%;
-    padding: 5px;
-    font-size: 16px;
+/* estilo de botão para <button> ou <a> */
+.btn-primary {
     background-color: #DC9730;
     color: #fff;
-    border:none;
-    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
     border-radius: 20px;
-    font-family: 'Ropa Sans', sans-serif;
-    cursor: pointer;
-}
-
-section.contato form button:hover{
-    background-color: #51D275;
-
 }
 
 @media (max-width: 900px) {
-    .container{
+    .container {
         padding: 0 40px;
     }
-    main section.projects .container{
+
+    main section.projects .container {
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -250,26 +253,10 @@ section.contato form button:hover{
     }
 }
 
-.main-form{
-    padding: 100px 0;
-
-}
-
-.btn-primary{
-    background-color: #DC9730;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 15px;
-    border-radius: 20px;
-}
-
-@media (max-width:740px){
-
-    footer{
+@media (max-width: 740px) {
+    footer {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
-
 }
